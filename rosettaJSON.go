@@ -98,7 +98,8 @@ func toJSON(args []string) {
 					if (cellNumber == languageIndex+1) && (cellContent != "") {
 						name := stringKey[rowNumber-1]
             stringContent = stringContent + "\"" + name + "\" : \"" + cellContent + "\""
-            if rowNumber != (len(stringKey) -1) {
+            // fmt.Println("rowNumber %d length %d", rowNumber, len(stringKey))
+            if rowNumber != (len(stringKey)) {
               stringContent = stringContent + ","
             }
 						stringContent = stringContent + "\n"
